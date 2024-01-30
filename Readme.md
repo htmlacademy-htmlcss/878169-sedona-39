@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Роман Никс](https://up.htmlacademy.ru/htmlcss/39/user/878169).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
 
 ---
 
