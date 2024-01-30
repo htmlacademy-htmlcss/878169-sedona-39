@@ -2,7 +2,7 @@
 
 * Студент: [Роман Никс](https://up.htmlacademy.ru/htmlcss/39/user/878169).
 * Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
-
+* Сайт: [Мой проект Седона](https://ancogni.github.io/878169-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
