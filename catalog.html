@@ -8,7 +8,7 @@
 <body>
   <header class="main-header" data-test="header">
     <a class="logo" href="index.html">
-      <img src="#" alt="Логотип сайта Седона">
+      <img src="images/sedona-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
     </a>
     <nav class="site-navigation">
       <ul class="site-navigation-list">
@@ -23,22 +23,20 @@
         </li>
       </ul>
     </nav>
-    <nav class="user-navigation">
-      <ul class="user-navigation-list">
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-navigation-link-search" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-navigation-link-favorites" href="#">
-            <span class="visually-hidden">Избранное</span>
-            <span class="favorites-count">12</span>
-          </a>
-        </li>
-      </ul>
-      <a class="button main-header-button" href="#">Хочу сюда!</a>
-    </nav>
+    <ul class="user-navigation-list">
+      <li class="user-navigation-item">
+        <a class="user-navigation-link user-navigation-link-search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+      </li>
+      <li class="user-navigation-item">
+        <a class="user-navigation-link user-navigation-link-favorites" href="#">
+          <span class="visually-hidden">Избранное</span>
+          <span class="favorites-count">12</span>
+        </a>
+      </li>
+    </ul>
+    <a class="button main-header-button" href="#">Хочу сюда!</a>
   </header>
   <main class="main-catalog" data-test="main">
     <section class="filter" data-test="filter">
@@ -129,7 +127,7 @@
       <h2>
         Найдено гостиниц: <span>38</span>
       </h2>
-      <select class="sort" aria-label="Сортировать по">
+      <select class="catalog-sort" aria-label="Сортировать по">
         <option value="cheap" selected>Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
@@ -162,7 +160,7 @@
           <p class="product-card-stars"><span class="visually-hidden">4 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span>8,5</span></p>
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Горы">
+            <img class="product-card-image" src="images/catalog-hotel-1.jpg" alt="Вид на ночное небо из ущелья" width="300" height="212">
           </a>
         </li>
         <li class="product-card">
@@ -176,7 +174,7 @@
           <p class="product-card-stars"><span class="visually-hidden">4 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Горы">
+            <img class="product-card-image" src="images/catalog-hotel-2.jpg" alt="Радуга на фоне гор" width="300" height="212">
           </a>
         </li>
         <li class="product-card">
@@ -190,7 +188,7 @@
           <p class="product-card-stars"><span class="visually-hidden">3 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span>6,9</span></p>
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Горы">
+            <img class="product-card-image" src="images/catalog-hotel-3.jpg" alt="Горы на фоне ясного неба" width="300" height="212">
           </a>
         </li>
         <li class="product-card">
@@ -204,7 +202,7 @@
           <p class="product-card-stars"><span class="visually-hidden">2 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span>5,0</span></p>
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Горы">
+            <img class="product-card-image" src="images/catalog-hotel-4.jpg" alt="Горы на фоне звездного неба" width="300" height="212">
           </a>
         </li>
       </ul>
@@ -240,7 +238,7 @@
     </section>
   </main>
   <footer class="main-footer" data-test="footer">
-    <section class="social">
+    <address class="contacts">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -259,9 +257,9 @@
         </li>
       </ul>
       <a class="social-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    </section>
+    </address>
     <a class="developer" href="https://htmlacademy.ru/">
-      <img class="htmlacademy-logo" src="#" alt="Логотип HTML Academy">
+      <img class="htmlacademy-logo" src="images/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="115" height="33">
     </a>
   </footer>
 </body>
