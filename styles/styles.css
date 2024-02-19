@@ -18,8 +18,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
+  margin: 0;
 }
 
 .site-navigation {
@@ -39,7 +40,7 @@ body {
 }
 
 .favorites-count {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
@@ -61,9 +62,10 @@ body {
 }
 
 .hero {
-  background-image: url(../images/index-hero-background.jpg);
+  background-color: #82b3d3;
+  background-image: url("../images/index-hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .section-title {
@@ -93,15 +95,15 @@ body {
 }
 
 .advantages-item {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
-.advantages-item-center {
-  background-color: #83B3D333;
+.advantages-item:not(.advantages-item-wide):nth-child(odd) {
+  background-color: #83b3d333;
 }
 
 .advantages-item-wide {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
 }
 
@@ -118,10 +120,10 @@ body {
 }
 
 .service-item {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
-.service-item-center {
+.service-item:nth-child(even) {
   background-color: #ffffff;
 }
 
@@ -140,22 +142,22 @@ body {
 }
 
 .subscribe-main {
-  background-color: #82B3D3;
-  background-image: url(../images/subscribe.jpg);
+  background-color: #82b3d3;
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
 }
 
 .subscribe-form input {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 
 .subscribe-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
 }
@@ -165,7 +167,7 @@ body {
 }
 
 .social-link {
-  color: #83B3D3;
+  color: #83b3d3;
   text-decoration: none;
 }
 
@@ -178,9 +180,10 @@ body {
 }
 
 .filter {
-  background-image: url(../images/catalog-filter-background.jpg);
+  background-color: #906252;
+  background-image: url("../images/catalog-filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .catalog-title {
@@ -215,7 +218,7 @@ body {
 }
 
 .filter-form > button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   font-size: 16px;
   line-height: 20px;
 }
@@ -225,7 +228,7 @@ body {
 }
 
 .filter-price input {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -268,24 +271,24 @@ body {
 }
 
 .add-favorite-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   font-size: 16px;
   line-height: 20px;
 }
 
 .favorite-button {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .product-card-rating {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
 .pagination-link {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
@@ -296,11 +299,17 @@ body {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-ellipsis {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.site-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
