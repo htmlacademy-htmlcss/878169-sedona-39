@@ -41,7 +41,7 @@
         </ul>
         <a class="button main-header-button" href="#">Хочу сюда!</a>
       </header>
-      <main class="main-catalog" data-test="main">
+      <main class="main-container main-catalog" data-test="main">
         <section class="filter" data-test="filter">
           <header class="filter-header">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -61,7 +61,7 @@
             </nav>
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-form-settings">
+            <fieldset class="filter-form-settings filter-form-settings-infrastructure">
               <legend class="filter-form-title">Инфрастуктура:</legend>
               <ul class="filter-form-list">
                 <li class="filter-form-item">
@@ -84,7 +84,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-form-settings">
+            <fieldset class="filter-form-settings filter-form-settings-house">
               <legend class="filter-form-title">Тип Жилья:</legend>
               <ul class="filter-form-list">
                 <li class="filter-form-item">
@@ -107,7 +107,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-form-settings">
+            <fieldset class="filter-form-settings filter-form-settings-price">
               <legend class="filter-form-title">Стоимость, ₽:</legend>
               <label class="filter-price">От
                 <input type="text" name="price" value="0">
@@ -115,15 +115,15 @@
               <label class="filter-price">До
                 <input type="text" name="price" value="9000">
               </label>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Минимальная цена</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Максимальная цена</span>
-              </button>
+              <div>
+                <input type="range" class="range-toggle toggle-min" type="button">
+                <input type="range" class="range-toggle toggle-max" type="button">
+              </div>
             </fieldset>
-            <button class="button submit-button" type="submit">Применить</button>
-            <button class="button reset-button" type="reset">Сбросить</button>
+            <div class="filter-buttons">
+              <button class="button submit-button" type="submit">Применить</button>
+              <button class="button reset-button" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
         <section class="catalog" data-test="catalog">
@@ -236,7 +236,7 @@
           </ul>
         </section>
         <section class="subscribe subscribe-inner" data-test="subscribe">
-          <h2>Подпишитесь на рассылку</h2>
+          <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
             <label class="visually-hidden" for="user-email">Ваш e-mail</label>
