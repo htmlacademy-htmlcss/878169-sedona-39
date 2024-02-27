@@ -11,7 +11,7 @@
     <div class="site-container">
       <header class="main-header" data-test="header">
         <a class="logo" href="index.html">
-          <img src="images/sedona-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
+          <img class="logo-image" src="images/sedona-logo.svg" alt="Логотип сайта Седона" width="140" height="70">
         </a>
         <nav class="site-navigation">
           <ul class="site-navigation-list">
@@ -39,7 +39,9 @@
             </a>
           </li>
         </ul>
-        <a class="button main-header-button" href="#">Хочу сюда!</a>
+        <div class="main-header-button">
+          <a class="button main-header-button-inner" href="#">Хочу сюда!</a>
+        </div>
       </header>
       <main class="main-container main-catalog" data-test="main">
         <section class="filter" data-test="filter">
@@ -62,7 +64,7 @@
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-form-settings filter-form-settings-infrastructure">
-              <legend class="filter-form-title">Инфрастуктура:</legend>
+              <legend class="filter-form-title">Инфраструктура:</legend>
               <ul class="filter-form-list">
                 <li class="filter-form-item">
                   <label>
@@ -109,15 +111,17 @@
             </fieldset>
             <fieldset class="filter-form-settings filter-form-settings-price">
               <legend class="filter-form-title">Стоимость, ₽:</legend>
-              <label class="filter-price">От
-                <input type="text" name="price" value="0">
-              </label>
-              <label class="filter-price">До
-                <input type="text" name="price" value="9000">
-              </label>
-              <div>
-                <input type="range" class="range-toggle toggle-min" type="button">
-                <input type="range" class="range-toggle toggle-max" type="button">
+              <div class="filter-price-wrap">
+                <label class="filter-price">
+                  <input type="text" name="price" value="0">
+                </label>
+                <label class="filter-price">
+                  <input type="text" name="price" value="9000">
+                </label>
+              </div>
+              <div class="range-toggle">
+                <input type="range" class="toggle-min" type="button">
+                <input type="range" class="toggle-max" type="button">
               </div>
             </fieldset>
             <div class="filter-buttons">
@@ -127,31 +131,33 @@
           </form>
         </section>
         <section class="catalog" data-test="catalog">
-          <h2 class="section-title catalog-section-title">
-            Найдено гостиниц: <span>38</span>
-          </h2>
-          <select class="catalog-sort" aria-label="Сортировать по">
-            <option value="cheap" selected>Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <ul class="preview-list">
-            <li class="preview-item">
-              <a class="preview-button" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-              </a>
-            </li>
-            <li class="preview-item">
-              <a class="preview-button" href="#">
-                <span class="visually-hidden">Показать подробно</span>
-              </a>
-            </li>
-            <li class="preview-item">
-              <a class="preview-button" href="#">
-                <span class="visually-hidden">Показать списком</span>
-              </a>
-            </li>
-          </ul>
+          <header class="catalog-header">
+            <h2 class="section-title catalog-section-title">
+              Найдено гостиниц: <span>38</span>
+            </h2>
+            <select class="catalog-sort" aria-label="Сортировать по">
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <ul class="preview-list">
+              <li class="preview-item">
+                <a class="preview-button" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="preview-item">
+                <a class="preview-button" href="#">
+                  <span class="visually-hidden">Показать подробно</span>
+                </a>
+              </li>
+              <li class="preview-item">
+                <a class="preview-button" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
+          </header>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -246,24 +252,24 @@
         </section>
       </main>
       <footer class="main-footer" data-test="footer">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
         <address class="contacts">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
           <a class="social-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="developer" href="https://htmlacademy.ru/">
