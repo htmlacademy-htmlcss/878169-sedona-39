@@ -184,29 +184,36 @@
           <div class="amount-group">
             <div class="amount-wrapper adult-amount-wrapper">
               <label class="field-label" for="adult-amount">Взрослые:</label>
-              <button type="button" class="amount-minus amount-button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input class="amount" type="number" id="adult-amount" name="adult-amount" value="2">
-              <button type="button" class="amount-plus amount-button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
+              <div class="amount-button-wrapper">
+                <button type="button" class="amount-minus amount-button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="amount" type="number" id="adult-amount" name="adult-amount" value="2">
+                <button type="button" class="amount-plus amount-button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+
             </div>
             <div class="amount-wrapper child-amount-wrapper">
               <label class="field-label field-label-child" for="child-amount">Дети:</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" >
-                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
-                </button>
-                <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <span class="tooltip-wrapper">
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" >
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
-              <button type="button" class="amount-minus child-amount-minus amount-button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input class="amount amount-child" type="number" id="child-amount" name="child-amount" value="2">
-              <button type="button" class="amount-plus child-amount-plus amount-button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
+              <div class="amount-button-wrapper">
+                <button type="button" class="amount-minus child-amount-minus amount-button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="amount amount-child" type="number" id="child-amount" name="child-amount" value="2">
+                <button type="button" class="amount-plus child-amount-plus amount-button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
             </div>
           </div>
           <button class="button modal-button" type="submit">Найти</button>
