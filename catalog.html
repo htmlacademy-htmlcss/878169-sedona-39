@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гостиницы</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -40,10 +41,10 @@
         </a>
       </li>
     </ul>
-    <button class="button user-navigation-button">Хочу сюда!</button>
+    <button class="button user-navigation-button" type="button">Хочу сюда!</button>
   </header>
   <main class="page-main page-main-catalog" data-test="main">
-    <section class="filter" data-test="filter">
+    <section class="filter">
       <header class="filter-header">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <nav class="breadcrumbs-navigation">
@@ -62,7 +63,7 @@
           </ol>
         </nav>
       </header>
-      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
         <fieldset class="filter-form-settings filter-form-settings-infrastructure">
           <legend class="filter-form-title">Инфраструктура:</legend>
           <ul class="filter-form-list">
@@ -119,16 +120,16 @@
           <legend class="filter-form-title">Стоимость, ₽:</legend>
           <div class="filter-price-wrapper">
             <label class="filter-price" for="min-price">
-              <span class="visually-hidden">От</span>
-              <div class="min-price-wrapper">
+              <span class="min-price-placeholder">От</span>
+              <span class="min-price-wrapper">
                 <input class="min-price" type="number" name="price" value="0" id="min-price">
-              </div>
+              </span>
             </label>
             <label class="filter-price" for="max-price">
-              <span class="visually-hidden">До</span>
-              <div class="max-price-wrapper">
+              <span class="max-price-placeholder">До</span>
+              <span class="max-price-wrapper">
                 <input class="max-price" type="number" name="price" value="9000" id="max-price">
-              </div>
+              </span>
             </label>
           </div>
           <div class="range">
@@ -142,6 +143,7 @@
                 </button>
               </div>
             </div>
+          </div>
         </fieldset>
         <div class="filter-buttons">
           <button class="button submit-button" type="submit">Применить</button>
@@ -192,8 +194,8 @@
           </a>
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-price">От 4000 ₽</p>
-          <button class="button product-card-button">Подробнее</button>
-          <button class="button add-favorite-button">В избранное</button>
+          <button class="button product-card-button" type="button">Подробнее</button>
+          <button class="button add-favorite-button" type="button">В избранное</button>
           <p class="product-card-stars four-stars"><span class="visually-hidden">4 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span class="average-rating">8,5</span></p>
         </li>
@@ -206,8 +208,8 @@
           </a>
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-price">От 5000 ₽</p>
-          <button class="button product-card-button">Подробнее</button>
-          <button class="button add-favorite-button favorite-button">В избранном</button>
+          <button class="button product-card-button" type="button">Подробнее</button>
+          <button class="button add-favorite-button favorite-button" type="button">В избранном</button>
           <p class="product-card-stars four-stars"><span class="visually-hidden">4 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span class="average-rating">9,2</span></p>
         </li>
@@ -220,8 +222,8 @@
           </a>
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-price">От 2500 ₽</p>
-          <button class="button product-card-button">Подробнее</button>
-          <button class="button add-favorite-button">В избранное</button>
+          <button class="button product-card-button" type="button">Подробнее</button>
+          <button class="button add-favorite-button" type="button">В избранное</button>
           <p class="product-card-stars three-stars"><span class="visually-hidden">3 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span class="average-rating">6,9</span></p>
         </li>
@@ -234,8 +236,8 @@
           </a>
           <p class="product-card-type">Гостиница</p>
           <p class="product-card-price">От 1500 ₽</p>
-          <button class="button product-card-button">Подробнее</button>
-          <button class="button add-favorite-button">В избранное</button>
+          <button class="button product-card-button" type="button">Подробнее</button>
+          <button class="button add-favorite-button" type="button">В избранное</button>
           <p class="product-card-stars two-stars"><span class="visually-hidden">2 звезды</span></p>
           <p class="product-card-rating">Рейтинг: <span class="average-rating">5,0</span></p>
         </li>
