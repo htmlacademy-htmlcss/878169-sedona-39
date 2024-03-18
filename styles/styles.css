@@ -1460,7 +1460,7 @@ margin: 0;
 }
 
 .child-amount-minus {
-  left: 93px;
+  left: 55px;
 }
 
 .amount-plus {
@@ -1515,10 +1515,6 @@ margin: 0;
 .amount:hover,
 .amount:focus {
   background-color: #e6e6e6;
-}
-
-.amount-child {
-  margin-left: 84px;
 }
 
 .amount::-webkit-outer-spin-button,
@@ -1587,13 +1583,14 @@ margin: 0;
 
 .tooltip-wrapper {
   position: relative;
+  width: 26px;
+  margin-left: 10px;
 }
 
 .tooltip {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 10px;
   width: 26px;
   height: 26px;
 }
