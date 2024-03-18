@@ -437,7 +437,7 @@ body {
   background-color: #756157;
   margin: 0 auto;
   padding: 8px 50px;
-  min-width: 376px;
+  width: 376px;
   border-radius: 4px;
 }
 
@@ -474,7 +474,7 @@ body {
 
 .subscribe-main {
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #947468;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -746,6 +746,10 @@ body {
   position: relative;
   cursor: pointer;
   padding-left: 36px;
+}
+
+.controls:has(.control-input:disabled) {
+  opacity: 0.1;
 }
 
 .controls:hover {
