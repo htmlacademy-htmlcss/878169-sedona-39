@@ -161,7 +161,7 @@
   </div>
   <div class="modal" data-test="modal">
     <div class="modal-container">
-      <button class="closed-modal">
+      <button class="closed-modal" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section>
@@ -170,14 +170,14 @@
           <div class="field-group-wrapper">
             <div class="field-group">
               <label class="field-label" for="date-in">Дата заезда:</label>
-              <input class="modal-date" type="text" id="date-in" name="date-in" value="27 апреля 2020" placeholder="Укажите дату">
+              <input class="modal-date" type="text" id="date-in" name="date-in" value="27 апреля 2020" placeholder="Укажите дату" required>
             </div>
             <p class="modal-description modal-description-error">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="field-group-wrapper">
             <div class="field-group">
               <label class="field-label" for="date-out">Дата выезда:</label>
-              <input class="modal-date" type="text" id="date-out" name="date-out" value="1 сентября 2023" placeholder="Укажите дату">
+              <input class="modal-date" type="text" id="date-out" name="date-out" value="1 сентября 2023" placeholder="Укажите дату" required>
             </div>
             <p class="modal-description">На эти даты есть свободные номера. Пока есть.</p>
           </div>
@@ -188,12 +188,11 @@
                 <button type="button" class="amount-minus amount-button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="amount" type="number" id="adult-amount" name="adult-amount" value="2">
+                <input class="amount" type="number" id="adult-amount" name="adult-amount" value="2" required>
                 <button type="button" class="amount-plus amount-button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
-
             </div>
             <div class="amount-wrapper child-amount-wrapper">
               <label class="field-label field-label-child" for="child-amount">Дети:</label>
@@ -209,7 +208,7 @@
                 <button type="button" class="amount-minus child-amount-minus amount-button">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
-                <input class="amount amount-child" type="number" id="child-amount" name="child-amount" value="2">
+                <input class="amount amount-child" type="number" id="child-amount" name="child-amount" value="2" required>
                 <button type="button" class="amount-plus child-amount-plus amount-button">
                   <span class="visually-hidden">Увеличить</span>
                 </button>
